@@ -2,12 +2,12 @@
   <img src="assets/banner.svg" width="100%" alt="bean: pixel fx and game tools">
 </p>
 
-<img src="assets/h-now.svg" height="27" alt="NOW">
+<img src="assets/h-now.svg" height="39" alt="NOW">
 
 I build pixel-art and game-dev tools for coding agents, mostly in Rust.
 Engineer at [@dwarvesf](https://github.com/dwarvesf), based in Viet Nam.
 
-<img src="assets/h-beanfx.svg" height="27" alt="BEANFX">
+<img src="assets/h-beanfx.svg" height="39" alt="BEANFX">
 
 [**beanfx**](https://github.com/baenv/beanfx): pixel-art effects drawn as code. Describe an effect and the
 Claude Code plugin draws it in Rust, then exports a sprite sheet, Aseprite JSON and a gif.
@@ -20,7 +20,7 @@ Claude Code plugin draws it in Rust, then exports a sprite sheet, Aseprite JSON 
 
 [Live gallery](https://beanfx.vhbien000.workers.dev/)
 
-<img src="assets/h-stack.svg" height="27" alt="TOOLS">
+<img src="assets/h-stack.svg" height="39" alt="TOOLS">
 
 ![Rust](https://img.shields.io/badge/Rust-1a1c2c?style=flat-square&logo=rust&logoColor=ffcd75)
 ![Go](https://img.shields.io/badge/Go-1a1c2c?style=flat-square&logo=go&logoColor=73eff7)
@@ -28,7 +28,7 @@ Claude Code plugin draws it in Rust, then exports a sprite sheet, Aseprite JSON 
 ![Godot](https://img.shields.io/badge/Godot-1a1c2c?style=flat-square&logo=godotengine&logoColor=a7f070)
 ![Aseprite](https://img.shields.io/badge/Aseprite-1a1c2c?style=flat-square&logo=aseprite&logoColor=ef7d57)
 
-<img src="assets/h-more.svg" height="27" alt="MORE">
+<img src="assets/h-more.svg" height="39" alt="MORE">
 
 - [devme](https://github.com/baenv/devme): one command for a local dev environment
 - [database-concurrency](https://github.com/baenv/database-concurrency): Go template for data concurrency (queue, Ethereum indexers, Postgres)

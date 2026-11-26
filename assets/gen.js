@@ -55,7 +55,8 @@ for(let i=0;i<40;i++){const x=Math.floor(rnd()*W),y=Math.floor(rnd()*34);if(x<11
 const flameA='<g class="fa"><rect x="217" y="59" width="6" height="1" fill="#ef7d57"/><rect x="218" y="58" width="4" height="1" fill="#ffcd75"/><rect x="219" y="57" width="1" height="1" fill="#ffcd75"/></g>';
 const flameB='<g class="fb"><rect x="216" y="59" width="7" height="1" fill="#ef7d57"/><rect x="219" y="58" width="3" height="1" fill="#ffcd75"/><rect x="221" y="57" width="1" height="1" fill="#ffcd75"/></g>';
 let steam='';[[218,0],[222,0.8],[225,1.6]].forEach(([x,d])=>{steam+='<rect class="st" style="animation-delay:'+d+'s" x="'+x+'" y="49" width="1" height="2" fill="#f4f4f4"/>';});
-const css='.tw{animation:tw 2.4s steps(1) infinite}@keyframes tw{0%{opacity:1}50%{opacity:.2}}.fa{animation:fl .5s steps(1) infinite}.fb{animation:fl .5s steps(1) infinite reverse;opacity:0}@keyframes fl{0%{opacity:1}50%{opacity:0}}.fb{animation-name:fl2}@keyframes fl2{0%{opacity:0}50%{opacity:1}}.st{animation:st 2.4s steps(6) infinite}@keyframes st{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-12px);opacity:0}}';
+const css='.tw{animation:tw 2.4s steps(1) infinite}@keyframes tw{0%{opacity:1}50%{opacity:.2}}.fa{animation:fl .5s steps(1) infinite}@keyframes fl{0%{opacity:1}50%{opacity:0}}.fb{opacity:0;animation:fl2 .5s steps(1) infinite}@keyframes fl2{0%{opacity:0}50%{opacity:1}}.st{animation:st 2.4s steps(6) infinite backwards}@keyframes st{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-12px);opacity:0}}';
 const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+W+' '+H+'" width="960" height="240" shape-rendering="crispEdges"><style>'+css+'</style>'+out+stars+flameA+flameB+steam+'</svg>';
-await Bun.write(process.argv[2]+'/assets/banner.svg',svg);
+const root=process.argv[2];if(!root)throw new Error('usage: bun gen.js <repo-root>');
+await Bun.write(root+'/assets/banner.svg',svg);
 console.log(svg.length);
