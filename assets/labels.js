@@ -5,7 +5,7 @@ x=0;for(const ch of s){const g=F[ch];for(let y=0;y<7;y++)for(let k=0;k<5;k++)if(
 return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+w+' '+h+'" width="'+w*3+'" height="'+h*3+'" shape-rendering="crispEdges">'+r+'</svg>';};
 const root=process.argv[2];if(!root)throw new Error('usage: bun labels.js <repo-root>');
 const d=root+'/assets/';
-const L={'h-now':['NOW','#ffcd75'],'h-beanfx':['BEANFX','#ef7d57'],'h-stack':['TOOLS','#73eff7'],'h-more':['MORE','#a7f070']};
+const L={'h-now':['NOW','#ffcd75'],'h-beanfx':['BEANFX','#ef7d57'],'h-stack':['TOOLS','#73eff7']};
 for(const [f,[t,c]] of Object.entries(L))await Bun.write(d+f+'.svg',label(t,c,'#b13e53'));
 let g='';const pal=['#38b764','#a7f070','#257179'];for(let x=0;x<320;x++){g+='<rect x="'+x+'" y="'+(x%7===0?0:1)+'" width="1" height="'+(x%7===0?4:3)+'" fill="'+pal[x%3===0?1:0]+'"/>';}
 await Bun.write(d+'ground.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 6" width="960" height="18" shape-rendering="crispEdges">'+g+'<rect x="0" y="4" width="320" height="2" fill="#257179"/></svg>');

@@ -28,9 +28,4 @@ Claude Code plugin draws it in Rust, then exports a sprite sheet, Aseprite JSON 
 ![Godot](https://img.shields.io/badge/Godot-1a1c2c?style=flat-square&logo=godotengine&logoColor=a7f070)
 ![Aseprite](https://img.shields.io/badge/Aseprite-1a1c2c?style=flat-square&logo=aseprite&logoColor=ef7d57)
 
-<img src="assets/h-more.svg" height="39" alt="MORE">
-
-- [devme](https://github.com/baenv/devme): one command for a local dev environment
-- [database-concurrency](https://github.com/baenv/database-concurrency): Go template for data concurrency (queue, Ethereum indexers, Postgres)
-
 <img src="assets/ground.svg" width="100%" alt="">
