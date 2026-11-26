@@ -5,7 +5,7 @@
 <img src="assets/h-now.svg" height="39" alt="NOW">
 
 I build pixel-art and game-dev tools for coding agents, mostly in Rust.
-Engineer at [@dwarvesf](https://github.com/dwarvesf), based in Viet Nam.
+Based in Viet Nam.
 
 <img src="assets/h-beanfx.svg" height="39" alt="BEANFX">
 
